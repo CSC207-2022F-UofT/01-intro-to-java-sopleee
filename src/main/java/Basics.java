@@ -178,8 +178,10 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
-        for(int a = 1; a <= arr.length; a += 2){
-            current_sum += arr[a];
+        for(int a = 0; a <= arr.length - 1; a += 1){
+            if(a % 2 != 0) {
+                current_sum += arr[a];
+            }
         }
         return current_sum;
     }
